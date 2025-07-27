@@ -1,0 +1,19 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Vue Example</title>
+    <link rel="icon" type="image/x-icon" th:href="@{/static/favicon.ico}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/static/css/app.css}" th:if="${@vueProperties.useVueBundle}">
+    <link th:href="@{/static/css/app.css}" th:unless="${@vueProperties.useVueBundle}">
+</head>
+<body>
+<div id="app">
+</div>
+<script th:src="@{/static/js/chunk-vendors.js}" th:if="${@vueProperties.useVueBundle}"></script>
+<script th:src="@{/static/js/app.js}" th:if="${@vueProperties.useVueBundle}"></script>
+
+<script type="module" th:src="@{/static/js/app.js}" th:unless="${@vueProperties.useVueBundle}"></script>
+<script type="module" th:src="@{/static/js/chunk-vendors.js}" th:unless="${@vueProperties.useVueBundle}"></script>
+</body>
+</html>
