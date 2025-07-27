@@ -1,0 +1,23 @@
+.idea/
+.DS_Store
+./vue-common/node_modules/
+./vue-common/dist/
+
+# local env files
+./vue-common/.env.local
+./vue-common/.env.*.local
+
+# Log files
+./vue-common/npm-debug.log*
+./vue-common/yarn-debug.log*
+./vue-common/yarn-error.log*
+./vue-common/pnpm-debug.log*
+
+# Editor directories and files
+./vue-common/.idea
+./vue-common/.vscode
+./vue-common/*.suo
+./vue-common/*.ntvs*
+./vue-common/*.njsproj
+./vue-common/*.sln
+./vue-common/*.sw?
