@@ -45,3 +45,4 @@ cd spring-boot-java-vue
 ## Related Projects
 * https://github.com/rheech/spring-boot-react-boilerplate
 * https://github.com/AkiaCode/python-react-boilerplate
+* https://github.com/trinity-teaparty/python-vue-boilerplate
